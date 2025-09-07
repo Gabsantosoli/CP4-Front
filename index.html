@@ -3,82 +3,159 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CP4</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Apartamento Enseada Guarujá com vista mar</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
-    <img src="images/airbnb.png">
-    <nav class="nav">
-      <ul>
-      <li>Qualquer lugar</li>
-      <li>Qualquer semana</li>
-      <li>Hóspedes</li>
-      <a>icone lupa - adicionar no css</a>
-      </ul>
-      <a>icone- linguagem - adicionar no css</a>
-      <a>icone - menu hamburguer - adicionar no css</a>
 
-      <a>Torne-se um anfitrião</a>
-      
-    </nav>
+  <header class="header">
+    <img src="images/airbnb.png" class="logo" alt="Airbnb Logo">
+
+    <form class="buscador">
+      <button type="button">Qualquer lugar</button>
+      <button type="button">Qualquer semana</button>
+      <button type="button">Hóspedes</button>
+      <button type="button" class="search-btn"><i class="material-icons">search</i></button>
+    </form>
+
+    <nav class="nav">
+      <a href="#">Torne-se um anfitrião</a>
+      <button class="menu-btn"><i class="material-icons">language</i></button>
+      <button class="menu-btn"><i class="material-icons">menu</i></button>
   </header>
 
+  
   <main class="informacoes">
+
     <section class="titulo">
       <h1>Apartamento Enseada Guarujá com vista mar</h1>
+      <div class="share">
+        <a href="#"><i class="material-icons">keyboard_capslock</i>Compartilhar</a>
+        <a href="#"><i class="material-icons">favorite_border</i>Salvar</a>
+      </div>
     </section>
-
+   
     <section class="fotos">
-      <img src="images/piscina.png">
-      <img src="images/quarto.png">
-      <img src="images/Sala.png">
-      <img src="images/cozinha.png">
-      <img src="images/garagem.png">
+      <img src="images/piscina.png" alt="Piscina">
+      <img src="images/quarto.png" alt="Quarto">
+      <img src="images/sala.png" alt="Sala">
+      <img src="images/cozinha.png" alt="Cozinha">
+      <img src="images/garagem.png" alt="Garagem">
     </section>
 
     <section class="espaco">
-      <h2>Espaço inteiro: apartamento em Guarujá, Brasil</h2>
-      <p><strong>Capacidade:</strong> 4 hóspedes · 1 quarto · 4 camas · 1 banheiro</p>
-      <p><strong>Preço:</strong> R$697 por 2 noites (≈ R$348,50/noite)</p>
+      <div class="anuncio-container">
+        <div class="esquerda-section">
+            <h1 class="espaco-inteiro">Espaço inteiro: apartamento em Guarujá, Brasil</h1>
+            <p class="detalhes">4 hóspedes · 1 quarto · 4 camas · 1 banheiro</p>
+            
+            <div class="avaliacao-section">
+                <div class="avaliacao-info">
+                    <div class="avaliacao-titulo">Preferido dos hóspedes</div>
+                    <div class="avaliacao-descricao">Uma das acomodações no Airbnb que fazem mais sucesso com os hóspedes</div>
+                </div>
+                <div class="avaliacao-score">
+                    <div class="score">4,94</div>
+                    <div class="estrelas">★★★★★</div>
+                    <div class="numero-avaliacoes">68 avaliações</div>
+                </div>
+            </div>
+
+            <div class="hospede-section">
+                <div class="avatar">L</div>
+                <div class="info">
+                    <h3>Anfitrião(a): Luciana</h3>
+                    <p>Superhost · 2 anos hospedando</p> 
+                </div>
+            </div>
+        </div>
+
+        <div class="agendamento-section">
+            <div class="agendamento-dates">
+                <div class="data-row">
+                    <div class="data-campo">
+                        <label class="data-label">CHECK-IN</label>
+                        <div class="data-valor">05/09/2025</div>
+                    </div>
+                    <div class="data-campo">
+                        <label class="data-label">CHECKOUT</label>
+                        <div class="data-valor">07/09/2025</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hospedes">
+                <label class="data-label">HÓSPEDES</label>
+                <div class="hospede-dropdown">
+                    <span class="data-valor">1 hóspede</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+            </div>
+
+            <div class="mensagem-erro">
+                <span class="icone-erro">⚠</span>
+                <span>Algo deu errado. Tente novamente depois</span>
+            </div>
+
+            <button class="data-btn">Conferir disponibilidade</button>
+        </div>
+    </div>
+
     </section>
 
     <section class="descricao">
-  <p>Piscina e vista para o mar.Sua família vai estar perto de tudo ao ficar neste lugar bem-localizado.Carrefour, praia, McDonald's, subway,swift, farmácias, restaurantes e bares.</p>
+      <hr>
+      <p>Piscina e vista para o mar.
+Sua família vai estar perto de tudo ao ficar neste lugar bem-localizado.
+Carrefour, praia, McDonald's, subway,swift, farmácias, restaurantes e bares.</p>
+      <hr>
     </section>
 
     <section class="comodidades">
-      <h2>O que este lugar oferece</h2>
+      <h2>O que esse lugar oferece</h2>
       <ul>
-        <li>Acesso à praia</li>
-        <li>Wi-Fi</li>
-        <li>Estacionamento incluído</li>
-        <li>Permitido animais</li>
-        <li>Elevador</li>
-        <li>Cozinha</li>
-        <li>Espaço de trabalho exclusivo</li>
-        <li>Piscina</li>
-        <li>TV</li>
+        <li><i class="material-icons">waves</i>Acesso à praia</li>
+        <li><i class="material-icons">wifi</i>Wi-Fi</li>
+        <li><i class="material-icons">garage</i>Estacionamento incluído</li>
+        <li><i class="material-icons">pets</i>Permitido animais</li>
+        <li><i class="material-icons">elevator</i>Elevador</li>
+        <li><i class="material-icons">flatware</i>Cozinha</li>
+        <li><i class="material-icons">desk</i>Espaço de trabalho exclusivo</li>
+        <li><i class="material-icons">pool</i>Piscina</li>
+        <li><i class="material-icons">tv</i>TV</li>
       </ul>
+      <hr>
     </section>
-
+  
     <section class="avaliacoes">
       <h2>Avaliações</h2>
-      <div>
-        <img src="images/usuario.png">
-        <h3>Dayane - agosto de 2025</h3>
-        <p>Foi extremamente maravilhoso, o apt é muito confortável, super bonito e bem equipado, super limpinho e acolhedor. Nos sentimos em casa, check-in bem prático e a vista da praia é incrível!</p>
+
+      <div class="avaliacao">
+        <div class="avatar">D</div>
+                <div class="info">
+                    <h3>Dayane - agosto de 2025</h3>
+                    <p>Foi extremamente maravilhoso, o apt é muito confortável, super bonito e bem equipado.</p> 
+                </div>
       </div>
-      <div>
-        <img src="images/usuario.png">
-        <h3>Natália - há 2 semanas</h3>
-        <p>Espaço bonito, confortável e bem equipado. Bastante comércio e serviço próximo. Bem perto da praia, não precisa sair de carro. A anfitriã foi muito atenciosa e prestativa.</p>
+
+      <div class="avaliacao">
+        <div class="avatar">L</div>
+                <div class="info">
+                    <h3>Clara - abril de 2025</h3>
+                    <p>Adorei o ambiente, muito espaçoso e aconchegante.</p> 
+                </div>
       </div>
+      <hr>
     </section>
 
-    <section class="regras">
-      <h2>Regras da casa</h2>
+
+     <section class="regras">
+      <h2>O que você deve saber</h2>
       <ul>
+        <strong>Regras da casa</strong>
         <li>Check-in: 12h às 14h</li>
         <li>Checkout antes das 10h</li>
         <li>Máximo de 4 hóspedes</li>
@@ -86,8 +163,15 @@
     </section>
   </main>
 
+  
   <footer class="footer">
+    <div class="footer-links">
+      <a href="#">Privacidade</a>
+      <a href="#">Termos</a>
+      <a href="#">Mapa do site</a>
+    </div>
     <p>© 2025 Airbnb</p>
   </footer>
+
 </body>
 </html>
