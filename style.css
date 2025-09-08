@@ -262,7 +262,11 @@ h1, h2, h3, h4, h5, h6 {
   min-width: 320px;
 }
 
-.agendamento-dates {
+.agendamento-section p {
+  font-size: 25px;
+}
+
+.agendamento-datas {
   border: 1px solid #ddd;
   border-radius: 8px;
   margin-bottom: 16px;
@@ -401,6 +405,8 @@ h1, h2, h3, h4, h5, h6 {
 .comodidades i{
 padding-right: 25px ;
 }
+
+
 
 
 .regras ul{
